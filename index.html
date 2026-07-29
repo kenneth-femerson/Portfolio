@@ -516,46 +516,68 @@
       </div>
     </div>
 
-  <!-- FORM KONTAK -->
-<form id="contactForm" class="md:col-span-3 pencil-border p-6 md:p-8" style="background:var(--paper);" action="https://formspree.io/f/xlgqzyzl" method="POST">
-  <div class="grid md:grid-cols-2 gap-5 mb-5">
-    <div>
-      <label for="name" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Name</label>
-      <input id="name" name="Name" type="text" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors" />
-    </div>
-    <div>
-      <label for="email" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Email Address</label>
-      <input id="email" name="Email" type="email" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors" />
-    </div>
-  </div>
-  <div class="mb-5">
-    <label for="subject" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Subject</label>
-    <input id="subject" name="Subject" type="text" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors" />
-  </div>
-  <div class="mb-6">
-    <label for="message" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Message</label>
-    <textarea id="message" name="Message" rows="4" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors resize-none"></textarea>
-  </div>
-  
-  <button id="submitBtn" type="submit" class="btn-scribble serif italic px-7 py-3 rounded-full text-[var(--paper)] cursor-pointer" style="background:var(--terracotta);">
-    Send Message
-  </button>
+    <!-- FORM KONTAK -->
+    <form id="contactForm" class="md:col-span-3 pencil-border p-6 md:p-8" style="background:var(--paper);" action="https://formspree.io/f/xlgqzyzl" method="POST">
+      <div class="grid md:grid-cols-2 gap-5 mb-5">
+        <div>
+          <label for="name" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Name</label>
+          <input id="name" name="Name" type="text" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors" />
+        </div>
+        <div>
+          <label for="email" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Email Address</label>
+          <input id="email" name="Email" type="email" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors" />
+        </div>
+      </div>
+      <div class="mb-5">
+        <label for="subject" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Subject</label>
+        <input id="subject" name="Subject" type="text" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors" />
+      </div>
+      <div class="mb-6">
+        <label for="message" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Message</label>
+        <textarea id="message" name="Message" rows="4" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors resize-none"></textarea>
+      </div>
+      
+      <button id="submitBtn" type="submit" class="btn-scribble serif italic px-7 py-3 rounded-full text-[var(--paper)] cursor-pointer" style="background:var(--terracotta);">
+        Send Message
+      </button>
 
-  <!-- PESAN SUKSES / NOTIFIKASI (Tersembunyi secara default) -->
-  <p id="formStatus" class="hidden text-sm font-semibold mt-4 text-[var(--forest)] border-l-2 border-[var(--forest)] pl-3 py-1">
-    ✦ Your email has been sent, thank you!
-  </p>
-</form>
+      <!-- PESAN SUKSES / NOTIFIKASI -->
+      <p id="formStatus" class="hidden text-sm font-semibold mt-4 text-[var(--forest)] border-l-2 border-[var(--forest)] pl-3 py-1">
+        ✦ Your email has been sent, thank you!
+      </p>
+    </form>
+  </div>
+</section>
 
 <!-- ================= FOOTER ================= -->
-<footer class="mt-8" style="background:var(--forest-deep);">
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6" style="color:var(--paper);">
-    <p class="serif italic text-center md:text-left" style="color:var(--paper); opacity:.85;">Thanks for flipping through my notebook — more pages coming soon.</p>
-    <div class="flex items-center gap-6">
-      <a href="Kenneth_Femerson_CV.pdf" download="Kenneth_Femerson_CV.pdf" class="btn-scribble serif italic px-6 py-2.5 rounded-full border-2" style="border-color:var(--paper); color:var(--paper);">Download Full CV (PDF)</a>
+<footer class="mt-12" style="background:var(--forest-deep); color:var(--paper);">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+    
+    <!-- Teks Penutup -->
+    <div class="max-w-md text-center md:text-left">
+      <p class="serif italic text-base md:text-lg leading-relaxed" style="color:var(--paper); opacity:0.9;">
+        Thanks for flipping through my notebook — more pages coming soon.
+      </p>
     </div>
+
+    <!-- Tombol Download CV -->
+    <div class="shrink-0">
+      <a href="Kenneth_Femerson_CV.pdf" download="Kenneth_Femerson_CV.pdf" class="btn-scribble serif italic inline-block px-6 py-2.5 rounded-full border-2 text-sm transition-transform hover:scale-105" style="border-color:var(--paper); color:var(--paper); white-space:nowrap;">
+        Download Full CV (PDF)
+      </a>
+    </div>
+
   </div>
-  <p class="text-center text-xs pb-6" style="color:var(--paper); opacity:.6;">© 2026 Kenneth Femerson. Built with ink, watercolour, and a little Tailwind.</p>
+
+  <!-- Garis Pemisah Tipis -->
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="w-full border-t border-white/15 mb-6"></div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="serif text-center text-xs pb-8" style="color:var(--paper); opacity:0.6;">
+    © 2026 Kenneth Femerson. Built with ink, watercolour, and a little Tailwind.
+  </p>
 </footer>
 
 <script>
@@ -649,6 +671,5 @@
     });
   }
 </script>
-</body>
 </body>
 </html>
