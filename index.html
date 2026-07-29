@@ -516,14 +516,7 @@
       </div>
     </div>
 
-    <form id="contactForm" class="md:col-span-3 pencil-border p-6 md:p-8" style="background:var(--paper);" action="https://api.web3forms.com/submit" method="POST">
-  
-  <!-- PASTE ACCESS KEY KAMU DI SINI (Ganti teks xxxxxxxx...) -->
-  <input type="hidden" name="access_key" value="a684033c-8bbf-4cd8-b207-3d2749e2f32a">
-  
-  <!-- Subject Email Otomatis yang bakal masuk ke Gmail kamu -->
-  <input type="hidden" name="subject" value="New Contact Form Submission - Kenneth Portfolio">
-
+    <form id="contactForm" class="md:col-span-3 pencil-border p-6 md:p-8" style="background:var(--paper);" action="https://formspree.io/f/xlgqzyzl" method="POST">
   <div class="grid md:grid-cols-2 gap-5 mb-5">
     <div>
       <label for="name" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Name</label>
@@ -542,9 +535,9 @@
     <label for="message" class="block text-xs uppercase tracking-wide text-[var(--ink-soft)] mb-1.5">Message</label>
     <textarea id="message" name="Message" rows="4" required class="w-full bg-transparent border-b-2 border-[var(--ink)] focus:border-[var(--terracotta)] outline-none py-2 text-sm transition-colors resize-none"></textarea>
   </div>
-  <button type="submit" class="btn-scribble serif italic px-7 py-3 rounded-full text-[var(--paper)]" style="background:var(--terracotta);">Send Message</button>
+  <button type="submit" class="btn-scribble serif italic px-7 py-3 rounded-full text-[var(--paper)] cursor-pointer" style="background:var(--terracotta);">Send Message</button>
+  <p class="text-xs text-[var(--ink-soft)] mt-3">Messages will be sent directly to my inbox.</p>
 </form>
-  </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
